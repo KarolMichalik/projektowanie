@@ -1,0 +1,27 @@
+function napisz(x){
+    var wartosc = x.value;
+
+    var div = document.getElementById('ekran');
+
+    div.innerHTML = div.innerHTML+wartosc;
+
+    console.log(wartosc);
+}
+
+function oblicz(x){
+    var div = document.getElementById('ekran');
+    var suma= eval(div.innerHTML);
+
+    div.innerHTML= suma;
+}
+function clear(){
+    var div = document.getElementById('ekran');
+    div.innerHTML = "";
+}
+function potega(){
+
+    var suma = Math.pow(3,2);
+    console.log(suma)
+    document.getElementById('potega').innerHTML=suma
+}
+
